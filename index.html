@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Intelligent Registration System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+<h2>Registration Form</h2>
+<div id="topError" class="top-error"></div>
+
+<form id="regForm">
+
+
+    <input type="text" id="fname" placeholder="First Name">
+    <span class="error" id="fnameErr"></span>
+
+    <input type="text" id="lname" placeholder="Last Name">
+    <span class="error" id="lnameErr"></span>
+
+    <input type="email" id="email" placeholder="Email">
+    <span class="error" id="emailErr"></span>
+
+    <input type="text" id="phone" placeholder="Phone Number">
+    <span class="error" id="phoneErr"></span>
+
+    <input type="number" id="age" placeholder="Age">
+
+    <label>Gender:</label>
+    <input type="checkbox" name="gender" value="Male">Male
+    <input type="checkbox" name="gender" value="Female">Female
+    <input type="checkbox" name="gender" value="Other">Other
+    <span class="error" id="genderErr"></span>
+
+    <textarea id="address" placeholder="Address"></textarea>
+
+    <select id="country">
+        <option value="">Select Country</option>
+        <option value="IN">India</option>
+        <option value="US">USA</option>
+    </select>
+
+    <select id="state">
+        <option value="">Select State</option>
+    </select>
+
+    <select id="city">
+        <option value="">Select City</option>
+    </select>
+
+    <input type="password" id="password" placeholder="Password">
+    <div id="strength"></div>
+
+    <input type="password" id="cpassword" placeholder="Confirm Password">
+    <span class="error" id="passErr"></span>
+
+    <label>
+        <input type="checkbox" id="terms"> Accept Terms & Conditions
+    </label>
+    <span class="error" id="termsErr"></span>
+
+    <button type="submit" id="submitBtn" disabled>Submit</button>
+
+</form>
+<p id="successMsg"></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+
+</html>
